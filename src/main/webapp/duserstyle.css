@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffe6f2; /* Light pastel pink background */
+}
+
+/* Header and footer styling */
+header, footer {
+    background-color: #ffccd5; /* Soft pastel pink */
+    color: #333333; /* Dark grey for contrast */
+    text-align: center;
+    padding: 10px 20px;
+}
+
+header .header-content {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space between logo and title */
+}
+
+header .logo {
+    height: 50px; /* Set a height for the logo */
+}
+
+header .title {
+    margin-left: 20px; /* Space between logo and title */
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+#message-text {
+    color: #0073e6; /* Blue shade */
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 0; /* Adds space above and below the text */
+    text-align: center; /* Centers the text horizontally */
+    line-height: 1.5;
+}
+
+
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+/* Dark theme styling */
+.dark-theme {
+    background-color: #d6f5d6; /* Light pastel green background */
+}
+
+/* Dark theme header/footer */
+.dark-theme header,
+.dark-theme footer {
+    background-color: #99d099; /* Dark background */
+}
+
+/* Dark theme navbar */
+.dark-theme .navbar {
+    background-color: #66b366; /* Darker shade for navbar */
+}
+
+
+.dark-theme .navbar a:hover {
+    background-color: #78b878; /* Darker green for hover effect */
+}
+
+/* Dark theme content and form */
+.dark-theme .content, 
+.dark-theme .form-container{
+    background-color: white; /* Dark background */
+}
+
+.dark-theme input[type="email"], 
+.dark-theme input[type="password"], 
+.dark-theme input[type="text"], 
+.dark-theme input[type="number"], 
+.dark-theme textarea {
+    background-color: #eaf8ea; /* Dark background */
+    border: 0.5px solid #99d099; /* Green pastel border for dark theme */
+}
+
+/* Dark theme - update profile page styling */
+.dark-theme .profile-page form {
+    background-color: #d6f5d6; /* Light green pastel background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
+}
+
+.dark-theme .content button[type="submit"],
+.dark-theme .profile-page button[type="submit"],
+.dark-theme .profile-page input[type="submit"],
+.dark-theme .profile-page .button-container button {
+    background-color: #388e3c; /* Light green pastel */
+}
+
+.dark-theme .content button[type="submit"]:hover,
+.dark-theme .profile-page button[type="submit"]:hover,
+.dark-theme .profile-page input[type="submit"]:hover,
+.dark-theme .profile-page .button-container button:hover {
+    background-color: #2c6c2b; /* Darker green pastel for hover */
+}
+
+/* Profile page specific styling */
+.dark-theme .profile-page h3 {
+    color: #388e3c; /* Darker pink for headings (light theme) */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+
+/* Dark theme buttons */
+.dark-theme input[type="submit"], 
+.dark-theme button {
+    background-color: #388e3c; /* Light green pastel */
+}
+
+.dark-theme input[type="submit"]:hover, 
+.dark-theme button:hover {
+    background-color: #2c6c2b; /* Darker green pastel for hover */
+}
+
+/* Dark theme table styles */
+.dark-theme table {
+    background-color: #eaf8ea; /* Dark background for table */
+    border: 1px solid #99d099; /* Light green border */
+}
+
+.dark-theme th {
+    background-color: #388e3c; /* Dark green header */
+}
+
+.dark-theme td {
+    border-bottom: 1px solid #99d099;
+}
+
+.dark-theme tr:nth-of-type(even) {
+    background-color: #eaf8ea; /* Slightly lighter dark for striped rows */
+}
+
+.dark-theme tr:hover {
+    background-color: #d6f5d6; /* Darker gray for hover effect */
+}
+
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Default theme table styles */
+table {
+    background-color: #fff0f5; /* Light pastel pink for table background */
+    color: #333333; /* Dark text for contrast */
+    border: 1px solid #f8a5c2; /* Light pink border */
+}
+
+th {
+    background-color: #ff4081; /* Soft pastel pink for header */
+    color: #333333;
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #f8a5c2; /* Light pastel border */
+}
+
+tr:nth-of-type(even) {
+    background-color: #ffe6f2; /* Slightly lighter pink for striped rows */
+}
+
+tr:hover {
+    background-color: #ffccd5; /* Hover effect */
+}
+
+
+/* Navbar styles */
+.navbar {
+    width: 20%;
+    background-color: #f8a5c2; /* Light pastel pinkish-lavender */
+    padding: 1rem;
+    color: #333333;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: left;
+}
+
+.navbar a:hover {
+    background-color: #ffb3c6; /* Slightly darker pastel pink for hover effect */
+    color: black;
+}
+
+/* Content section */
+.content {
+    width: 80%;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.content h2 {
+    margin-bottom: 1rem;
+}
+
+/* Form styling */
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+input[type="email"], input[type="password"], input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #f8a5c2; /* Light pastel border */
+    border-radius: 4px;
+    background-color: #fff0f5; /* Very light pastel pink background for input */
+}
+
+input[type="submit"], input[type="login"] {
+    background-color: #ffb3c6; /* Light pastel pink */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="login"]:hover {
+    background-color: #ff99b9; /* Slightly darker pastel pink */
+}
+
+.button-container {
+    text-align: center;
+}
+
+/* Profile page specific styling */
+.profile-page h3 {
+    color: #ff66a3; /* Darker pink for headings */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.profile-page form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffe6f2; /* Light pastel pink */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333333;
+}
+
+.profile-page .profile-picture {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.profile-page .profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #ffb3c6; /* Light pink border */
+}
+
+.profile-page button[type="submit"],
+.profile-page input[type="submit"],
+.profile-page .button-container button {
+    background-color: #ff6699; /* Vibrant pink for submit */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-page button[type="submit"]:hover,
+.profile-page input[type="submit"]:hover,
+.profile-page .button-container button:hover {
+    background-color: #ff4081; /* Slightly darker pink for hover */
+}
+
+.profile-page .button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-page input[type="radio"] {
+    margin-right: 5px;
+}
+
+.profile-page label[for="male"],
+.profile-page label[for="female"] {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+button[type="submit"],
+input[type="submit"],
+button {
+    background-color: #ff6699; /* Vibrant pink for submit */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+button:hover {
+    background-color: #ff4081; /* Slightly darker pink for hover */
+}
+
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+     .profile-page form {
+        padding: 15px;
+    }
+
+    .profile-page .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 1em;
+        display: block;
+    }
+
+    th, td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+}
