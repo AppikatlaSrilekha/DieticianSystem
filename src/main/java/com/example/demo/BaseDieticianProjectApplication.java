@@ -8,7 +8,7 @@ public class BaseDieticianProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BaseDieticianProjectApplication.class, args);
-		System.out.println("Dietician Project started running.....");
+		System.out.println("Dietician Project running.....");
 	}
 
 }
