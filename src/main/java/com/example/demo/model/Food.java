@@ -1,10 +1,8 @@
 package com.example.demo.model;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -42,9 +40,6 @@ public class Food {
 
     @CreationTimestamp
     private LocalDate dateCreated;
-
-    @UpdateTimestamp
-    private LocalDate lastUpdated;
 
 
 	public int getId() {
@@ -109,14 +104,6 @@ public class Food {
 
 	public void setDateCreated(LocalDate dateCreated) {
 		this.dateCreated = dateCreated;
-	}
-
-	public LocalDate getLastUpdated() {
-		return lastUpdated;
-	}
-
-	public void setLastUpdated(LocalDate lastUpdated) {
-		this.lastUpdated = lastUpdated;
 	}
 
 	public String getUseremail() {
