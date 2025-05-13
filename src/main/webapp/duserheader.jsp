@@ -23,9 +23,9 @@
 <body>
 	<header>
 		<div class="header-content">
-            <img src="/images/logo.png" alt="Logo" class="logo">
+            <img src="logo.png" alt="Logo" class="logo">
             <h1 class="title">Dieitican DashBoard</h1>
-            <img src="/images/toggle.png" alt="Toggle" class="logo" onclick="toggleTheme()">
+            <img src="toggle.png" alt="Toggle" class="logo" onclick="toggleTheme()">
         </div>
     </header>
 </body>

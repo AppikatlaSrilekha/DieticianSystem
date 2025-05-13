@@ -12,7 +12,7 @@
     <!-- Header Section -->
     <header class="header">
         <div class="header-content">
-            <img src="/images/logo.png" alt="Logo" class="logo">
+            <img src="logo.png" alt="Logo" class="logo">
             <h1 class="title">Diet Recommendation System</h1>
         </div>
     </header>
